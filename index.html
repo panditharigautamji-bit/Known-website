@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Known — Personal Brands for Finance & Self-Growth Creators</title>
-<meta name="description" content="Known builds personal brands for finance, stock market and self-development creators. Strategy, scripts, editing and posting, handled.">
+<title>Apex Creators — Personal Brands for Finance & Self-Growth Creators</title>
+<meta name="description" content="Apex Creators builds personal brands for finance, stock market and self-development creators. Strategy, scripts, editing and posting, handled.">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@ em.g{font-style:normal;color:var(--gold)}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 /* grain */
-.grain{position:fixed;inset:-50%;pointer-events:none;z-index:80;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");animation:grain 1.2s steps(6) infinite}
+.grain{position:fixed;inset:-50%;pointer-events:none;z-index:80;opacity:.035;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-2%)}60%{transform:translate(-2%,-4%)}80%{transform:translate(4%,2%)}100%{transform:translate(0,0)}}
 
 /* buttons */
@@ -51,7 +51,7 @@ em.g{font-style:normal;color:var(--gold)}
 nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:60;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
 nav.solid{background:rgba(14,13,12,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-color:var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.logo{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.045em;display:flex;align-items:center;gap:9px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.04em;white-space:nowrap;display:flex;align-items:center;gap:9px}
 .logo b{width:3px;height:22px;background:var(--gold);border-radius:2px;display:block}
 .links{display:flex;gap:30px;font-size:14px;color:var(--dust)}
 .links a{position:relative}
@@ -110,12 +110,12 @@ section{padding-block:130px}
 .reel video,.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),opacity .5s}
 .reel img{z-index:1}
 .reel.playing img{opacity:0}
-.reel:hover video,.reel:hover img{transform:scale(1.04)}
+.reel:hover img{transform:scale(1.04)}
 .reel .shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(10,9,8,.35) 0%,transparent 30%,transparent 55%,rgba(10,9,8,.92) 100%);pointer-events:none}
-.chip{position:absolute;top:14px;left:14px;z-index:3;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(14,13,12,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(237,231,222,.14)}
+.chip{position:absolute;top:14px;left:14px;z-index:3;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(14,13,12,.7);border:1px solid rgba(237,231,222,.14)}
 .meta{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:18px;display:grid;gap:6px}
 .meta h3{font-size:18px}
-.play{position:absolute;z-index:3;top:50%;left:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(237,231,222,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:grid;place-items:center;transform:scale(.8);opacity:0;transition:.5s var(--ease)}
+.play{position:absolute;z-index:3;top:50%;left:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(14,13,12,.55);border:1px solid rgba(237,231,222,.25);display:grid;place-items:center;transform:scale(.8);opacity:0;transition:.5s var(--ease)}
 .play::after{content:"";margin-left:5px;border:10px solid transparent;border-left:16px solid var(--bone);border-right:0}
 .reel:hover .play{opacity:1;transform:none}
 .hint{margin-top:22px;text-align:center}
@@ -130,13 +130,27 @@ section{padding-block:130px}
 .long video,.long img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .5s}
 .long img{z-index:1}
 .long.playing img{opacity:0}
-.long:hover video,.long:hover img{transform:scale(1.025)}
+.long:hover img{transform:scale(1.025)}
 .long .shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 45%,rgba(10,9,8,.9));pointer-events:none}
 .long .meta{padding:30px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
 .long .meta h3{font-size:clamp(22px,2.8vw,38px);font-weight:800;max-width:24ch}
 .long:hover .play{opacity:1;transform:none}
 .lb.wide video{height:auto;width:min(92vw,1280px);aspect-ratio:16/9}
 @media (max-width:640px){.long{aspect-ratio:4/3}.long .meta{padding:16px}}
+
+
+/* thumbnails */
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.thumb{display:grid;gap:14px;color:inherit}
+.thumb .fr{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.thumb:hover img{transform:scale(1.05)}
+.thumb .yt{position:absolute;right:12px;bottom:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(14,13,12,.75);border:1px solid rgba(237,231,222,.14);opacity:0;transform:translateY(6px);transition:.5s var(--ease)}
+.thumb:hover .yt{opacity:1;transform:none}
+.thumb h3{font-size:18px;line-height:1.25}
+.thumb .mono{margin-top:-6px}
+@media (max-width:980px){.thumbs{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.thumbs{grid-template-columns:1fr}}
 
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:100;background:rgba(8,7,6,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top,0px)) 20px max(24px,env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .45s var(--ease)}
@@ -220,11 +234,11 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 
 <nav id="nav">
   <div class="wrap">
-    <a href="#top" class="logo"><b></b>Known</a>
+    <a href="#top" class="logo"><b></b>Apex Creators</a>
     <div class="links">
-      <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a>
+      <a href="#work">Work</a><a href="#thumbnails">Thumbnails</a><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a>
     </div>
-    <a href="#book" class="btn">Book a call</a>
+    <a href="https://calendly.com/apexcreators/30min" target="_blank" rel="noopener" class="btn">Book a call</a>
   </div>
 </nav>
 
@@ -235,12 +249,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <h1><span class="ln"><span>Become</span></span><span class="ln"><span>the name</span></span><span class="ln"><span><em class="g">they know.</em></span></span></h1>
       <p class="sub">We build personal brands for finance, trading and self-growth creators. You record. We handle strategy, scripts, editing and posting.</p>
       <div class="ctas">
-        <a href="#book" class="btn"><i></i>Book a free call</a>
+        <a href="https://calendly.com/apexcreators/30min" target="_blank" rel="noopener" class="btn"><i></i>Book a free call</a>
         <a href="#work" class="btn ghost">See the work</a>
       </div>
     </div>
     <div class="monitor" aria-label="Showreel">
-      <video src="media/07-zuckerberg-meta.mp4" poster="media/07-zuckerberg-meta.jpg" autoplay muted loop playsinline></video>
+      <video src="media/p-07-zuckerberg-meta.mp4" poster="media/07-zuckerberg-meta.jpg" autoplay muted loop playsinline preload="auto"></video>
       <div class="hud"><span class="mono rec"><b></b>REC</span><span class="mono" id="tc" style="color:var(--bone)">00:00:00:00</span></div>
       <div class="tl" aria-hidden="true">
         <div class="tr"><span style="flex:3"></span><span style="flex:1.2"></span><span style="flex:2"></span><span style="flex:.8"></span><span style="flex:2.4"></span></div>
@@ -273,12 +287,26 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <div class="longs">
       <article class="long rv" data-src="media/lf-01-motion-graphics.mp4" tabindex="0" role="button" aria-label="Play: Your videos aren't built to get clients">
         <img src="media/lf-01-motion-graphics.jpg" alt="" loading="lazy">
-        <video muted loop playsinline preload="none" src="media/lf-01-motion-graphics.mp4"></video>
+        <video muted loop playsinline preload="none" data-src="media/p-lf-01-motion-graphics.mp4"></video>
         <div class="shade"></div>
         <span class="chip">YouTube · Long-form</span>
         <div class="play"></div>
         <div class="meta"><h3>Your videos aren't built to get clients</h3><span class="mono">Motion graphics · Data visuals · Story edit</span></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="thumbnails" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eye">Thumbnails</div><h2>Designed to <em class="g">get the click.</em></h2></div>
+      <p>Thumbnails we design for our clients' YouTube videos. Click any one to watch it on YouTube.</p>
+    </div>
+    <div class="thumbs">
+      <a class="thumb rv" href="https://youtu.be/ZjYbj11E9WQ" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/ZjYbj11E9WQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ZjYbj11E9WQ/hqdefault.jpg'" alt="Thumbnail: Do This EVERY Time You Get Paid in 2026" loading="lazy"><span class="yt">Watch on YouTube ↗</span></div><h3>Do This EVERY Time You Get Paid in 2026 (Paycheck Routine)</h3><span class="mono">Money Coach Dave</span></a>
+      <a class="thumb rv" href="https://youtu.be/xzJuSvG4Bis" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/xzJuSvG4Bis/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/xzJuSvG4Bis/hqdefault.jpg'" alt="Thumbnail: If You Only Watch One Investing Video, Make It This" loading="lazy"><span class="yt">Watch on YouTube ↗</span></div><h3>If You Only Watch One Investing Video, Make It This</h3><span class="mono">Money Coach Dave</span></a>
+      <a class="thumb rv" href="https://youtu.be/-pMTnXZM9BE" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/-pMTnXZM9BE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/-pMTnXZM9BE/hqdefault.jpg'" alt="Thumbnail: 5 Psychological Tricks to Write Viral Hooks" loading="lazy"><span class="yt">Watch on YouTube ↗</span></div><h3>5 Psychological Tricks to Write Viral Hooks</h3><span class="mono">Hritik Chawla</span></a>
     </div>
   </div>
 </section>
@@ -323,7 +351,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
         <li>No clear idea of what to post or why</li>
         <li>Views that never turn into clients</li>
       </ul></div>
-      <div class="col us rv"><h3>With Known</h3><ul>
+      <div class="col us rv"><h3>With Apex Creators</h3><ul>
         <li>Consistent content every week, without your daily effort</li>
         <li>A team that knows finance, markets and self-growth content</li>
         <li>A clear plan built around what you want to be known for</li>
@@ -353,7 +381,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <h2>Let's make you <em class="g">known.</em></h2>
     <div class="contact">
       <!-- Replace these two links with your booking link and Instagram -->
-      <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn"><i></i>Book a free call</a>
+      <a href="https://calendly.com/apexcreators/30min" target="_blank" rel="noopener" class="btn"><i></i>Book a free call</a>
       <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn ghost">DM on Instagram</a>
     </div>
   </div>
@@ -361,9 +389,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 
 <footer>
   <div class="wrap">
-    <a href="#top" class="logo"><b></b>Known</a>
+    <a href="#top" class="logo"><b></b>Apex Creators</a>
     <span>Personal brands for finance, stock market &amp; self-development creators</span>
-    <span>© <span id="yr">2026</span> Known</span>
+    <span>© <span id="yr">2026</span> Apex Creators</span>
   </div>
 </footer>
 
@@ -375,6 +403,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <script>
 (function(){
   document.documentElement.classList.add('js');
+  function loadV(v){if(v&&!v.getAttribute('src')&&v.dataset.src){v.src=v.dataset.src;v.preload='auto';v.load()}}
   var REELS=[
     ['01-revenue-profit-cashflow','Revenue vs profit vs cash flow','Finance','Motion graphics'],
     ['02-investors','How investors value a company','Stock market','Explainer'],
@@ -389,9 +418,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   REELS.forEach(function(r){
     var a=document.createElement('article');
     a.className='reel rv';a.tabIndex=0;a.setAttribute('role','button');a.setAttribute('aria-label','Play: '+r[1]);
-    a.innerHTML='<img src="media/'+r[0]+'.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" src="media/'+r[0]+'.mp4"></video><div class="shade"></div><span class="chip">'+r[2]+'</span><div class="play"></div><div class="meta"><h3>'+r[1].replace(/&/g,'&amp;')+'</h3><span class="mono">Reel · '+r[3]+'</span></div>';
+    a.innerHTML='<img src="media/'+r[0]+'.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="media/p-'+r[0]+'.mp4"></video><div class="shade"></div><span class="chip">'+r[2]+'</span><div class="play"></div><div class="meta"><h3>'+r[1].replace(/&/g,'&amp;')+'</h3><span class="mono">Reel · '+r[3]+'</span></div>';
     var v=a.querySelector('video');
-    a.addEventListener('mouseenter',function(){v.play().then(function(){a.classList.add('playing')}).catch(function(){})});
+    a.addEventListener('mouseenter',function(){loadV(v);v.play().then(function(){a.classList.add('playing')}).catch(function(){})});
     a.addEventListener('mouseleave',function(){v.pause();a.classList.remove('playing')});
     function open(){openLB('media/'+r[0]+'.mp4')}
     a.addEventListener('click',open);
@@ -408,12 +437,19 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 
   document.querySelectorAll('.long').forEach(function(a){
     var v=a.querySelector('video');
-    a.addEventListener('mouseenter',function(){v.play().then(function(){a.classList.add('playing')}).catch(function(){})});
+    a.addEventListener('mouseenter',function(){loadV(v);v.play().then(function(){a.classList.add('playing')}).catch(function(){})});
     a.addEventListener('mouseleave',function(){v.pause();a.classList.remove('playing')});
     function open(){openLB(a.dataset.src,true)}
     a.addEventListener('click',open);
     a.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
   });
+
+  // preload hover previews once cards are near the screen, so hover starts instantly
+  var pv=[].slice.call(document.querySelectorAll('video[data-src]'));
+  if('IntersectionObserver' in window){
+    var vio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadV(e.target);vio.unobserve(e.target)}})},{rootMargin:'400px 0px'});
+    pv.forEach(function(v){vio.observe(v)});
+  } else { pv.forEach(loadV); }
 
   // nav
   var nav=document.getElementById('nav');
