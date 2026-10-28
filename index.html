@@ -152,6 +152,31 @@ section{padding-block:130px}
 @media (max-width:980px){.thumbs{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.thumbs{grid-template-columns:1fr}}
 
+
+/* case study */
+.cs{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:stretch}
+.cs-card{border:1px solid #4a3a24;border-radius:24px;padding:40px;background:linear-gradient(160deg,#1d1914,#141210);display:grid;gap:26px;align-content:start}
+.cs-who{display:flex;align-items:center;gap:14px}
+.cs-av{width:54px;height:54px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:20px;flex:none}
+.cs-who h3{font-size:22px}
+.cs-card p{color:var(--dust);max-width:44ch}
+.cs-card .btn{justify-self:start}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.stat{background:var(--ink);padding:34px 30px;display:grid;gap:8px;align-content:end}
+.stat b{font-family:var(--display);font-weight:800;font-size:clamp(44px,5.4vw,76px);letter-spacing:-.04em;line-height:.9;color:var(--bone);font-variant-numeric:tabular-nums}
+.stat b em{font-style:normal;color:var(--gold)}
+.stat>span{color:var(--dust);font-size:15px}
+.cs-top{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cs-top a{display:grid;gap:10px}
+.cs-top .fr{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.cs-top img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.cs-top a:hover img{transform:scale(1.05)}
+.cs-top .v{position:absolute;left:10px;top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:5px 9px;border-radius:999px;background:var(--gold);color:var(--ink);font-weight:500}
+.cs-top h3{font-size:16px;line-height:1.3}
+.cs-note{margin-top:14px;font-size:12px}
+@media (max-width:980px){.cs{grid-template-columns:1fr}.cs-top{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cs-card{padding:28px}.stat{padding:24px 20px}.cs-top{grid-template-columns:1fr}}
+
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:100;background:rgba(8,7,6,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top,0px)) 20px max(24px,env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .45s var(--ease)}
 .lb.open{opacity:1;pointer-events:auto}
@@ -236,7 +261,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap">
     <a href="#top" class="logo"><b></b>Apex Creators</a>
     <div class="links">
-      <a href="#work">Work</a><a href="#thumbnails">Thumbnails</a><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a>
+      <a href="#work">Work</a><a href="#thumbnails">Thumbnails</a><a href="#case-study">Case study</a><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a>
     </div>
     <a href="https://calendly.com/apexcreators/30min" target="_blank" rel="noopener" class="btn">Book a call</a>
   </div>
@@ -308,6 +333,34 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <a class="thumb rv" href="https://youtu.be/xzJuSvG4Bis" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/xzJuSvG4Bis/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/xzJuSvG4Bis/hqdefault.jpg'" alt="Thumbnail: If You Only Watch One Investing Video, Make It This" loading="lazy"><span class="yt">Watch on YouTube ↗</span></div><h3>If You Only Watch One Investing Video, Make It This</h3><span class="mono">Money Coach Dave</span></a>
       <a class="thumb rv" href="https://youtu.be/-pMTnXZM9BE" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/-pMTnXZM9BE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/-pMTnXZM9BE/hqdefault.jpg'" alt="Thumbnail: 5 Psychological Tricks to Write Viral Hooks" loading="lazy"><span class="yt">Watch on YouTube ↗</span></div><h3>5 Psychological Tricks to Write Viral Hooks</h3><span class="mono">Hritik Chawla</span></a>
     </div>
+  </div>
+</section>
+
+<section id="case-study" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eye">Case study</div><h2>Money Coach Dave: <em class="g">personal finance on YouTube.</em></h2></div>
+      <p>Long-form personal finance videos for a young audience, edited and packaged for clicks and watch time.</p>
+    </div>
+    <div class="cs">
+      <div class="cs-card rv">
+        <div class="cs-who"><div class="cs-av">D</div><div><h3>Money Coach Dave</h3><span class="mono">@MoneyCoachDave · Personal finance</span></div></div>
+        <p>Weekly long-form videos on investing, saving and budgeting for people in their 20s. Every upload gets a retention-focused edit and a thumbnail built to stand out in a crowded finance feed.</p>
+        <a href="https://www.youtube.com/@MoneyCoachDave/videos" target="_blank" rel="noopener" class="btn ghost">See the channel ↗</a>
+      </div>
+      <div class="stats rv">
+        <div class="stat"><b><span class="cnt" data-to="244">244</span><em>K+</em></b><span>views across the channel</span></div>
+        <div class="stat"><b><span class="cnt" data-to="61">61</span><em>K</em></b><span>views on the top video</span></div>
+        <div class="stat"><b><span class="cnt" data-to="22">22</span></b><span>long-form videos in 4 months</span></div>
+        <div class="stat"><b><span class="cnt" data-to="1.9" data-dec="1">1.9</span><em>K+</em></b><span>subscribers</span></div>
+      </div>
+    </div>
+    <div class="cs-top">
+      <a class="rv" href="https://youtu.be/kuvTmEz_Uoo" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/kuvTmEz_Uoo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/kuvTmEz_Uoo/hqdefault.jpg'" alt="Thumbnail: 7 Years of ETF Investing" loading="lazy"><span class="v">61K views</span></div><h3>7 Years of ETF Investing: Here's What I Learned</h3></a>
+      <a class="rv" href="https://youtu.be/tXB-QTWfx7E" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/tXB-QTWfx7E/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/tXB-QTWfx7E/hqdefault.jpg'" alt="Thumbnail: The 5 Best High Yield Savings Accounts of 2026" loading="lazy"><span class="v">38K views</span></div><h3>The 5 BEST High Yield Savings Accounts of 2026</h3></a>
+      <a class="rv" href="https://youtu.be/JTJ-gx23tb4" target="_blank" rel="noopener"><div class="fr"><img src="https://i.ytimg.com/vi/JTJ-gx23tb4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/JTJ-gx23tb4/hqdefault.jpg'" alt="Thumbnail: The Right Way to Build an Emergency Fund" loading="lazy"><span class="v">26K views</span></div><h3>The RIGHT Way to Build an Emergency Fund in 2026</h3></a>
+    </div>
+    <p class="mono cs-note">Public YouTube figures, October 2026.</p>
   </div>
 </section>
 
@@ -406,13 +459,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   function loadV(v){if(v&&!v.getAttribute('src')&&v.dataset.src){v.src=v.dataset.src;v.preload='auto';v.load()}}
   var REELS=[
     ['01-revenue-profit-cashflow','Revenue vs profit vs cash flow','Finance','Motion graphics'],
-    ['02-investors','How investors value a company','Stock market','Explainer'],
-    ['03-amazon-funding','What Amazon sellers really make','Finance','Podcast cut'],
-    ['04-service-vs-product','Service vs product business','Business','Podcast cut'],
-    ['05-why-owners-fail','Why business owners stay stuck','Self-development','Talking head'],
     ['06-founder-growth','Founder growth story','Personal brand','Case study'],
     ['07-zuckerberg-meta','Zuckerberg & Meta','Stock market','Story'],
-    ['08-profit-podcast',"Profit isn't what you think",'Finance','Podcast cut']
+    ['08-profit-podcast',"Profit isn't what you think",'Finance','Podcast cut'],
+    ['05-why-owners-fail','Why business owners stay stuck','Self-development','Talking head'],
+    ['02-investors','How investors value a company','Stock market','Explainer'],
+    ['03-amazon-funding','What Amazon sellers really make','Finance','Podcast cut'],
+    ['04-service-vs-product','Service vs product business','Business','Podcast cut']
   ];
   var grid=document.getElementById('reels');
   REELS.forEach(function(r){
@@ -450,6 +503,15 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     var vio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadV(e.target);vio.unobserve(e.target)}})},{rootMargin:'400px 0px'});
     pv.forEach(function(v){vio.observe(v)});
   } else { pv.forEach(loadV); }
+
+  // count-up on case study stats (numbers are already correct if JS or motion is off)
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);
+      var el=e.target,to=parseFloat(el.dataset.to),dec=+(el.dataset.dec||0),t0=performance.now(),d=1400;
+      (function step(t){var k=Math.min(1,(t-t0)/d);k=1-Math.pow(1-k,3);el.textContent=(to*k).toFixed(dec);if(k<1)requestAnimationFrame(step)})(t0);
+    })},{threshold:.6});
+    document.querySelectorAll('.cnt').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight)cio.observe(el)});
+  }
 
   // nav
   var nav=document.getElementById('nav');
